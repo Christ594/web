@@ -13,6 +13,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
+<script>
+    // Check if the device is an iPad or tablet
+    var isIpadOrTablet = /(iPad|tablet)/i.test(navigator.userAgent);
+
+    // Redirect or show error message if it's an iPad or tablet
+    if (isIpadOrTablet) {
+        //window.location.href = 'unsupported.html'; // Redirect to unsupported.html
+        // Alternatively, you can display an error message
+         document.body.innerHTML = '<h1>Sorry, this website is not supported on iPads and tablets.</h1>';
+    }
+</script>
     <img id="Logo" src="Logo(Little Techs Academy).PNG">
 
     <div>
